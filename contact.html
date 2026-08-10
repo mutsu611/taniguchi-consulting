@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>お問い合わせ｜谷口経営コンサルティング</title>
+<meta name="description" content="谷口経営コンサルティングへのお問い合わせはこちらのフォームからお願いいたします。">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="谷口経営コンサルティング">
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="profile.html">プロフィール・サービス</a></li>
+        <li><a href="news.html">お知らせ</a></li>
+        <li><a href="contact.html" class="is-active">お問い合わせ</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">無料相談を申し込む</a>
+    </nav>
+    <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">CONTACT</span>
+      <h1>お問い合わせ</h1>
+      <p>経営相談、創業のご相談、ノーコード・AI活用のご相談など、お気軽にお問い合わせください。</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="contact-layout">
+
+        <div class="contact-info">
+          <h2>お問い合わせについて</h2>
+          <p>フォームよりご連絡いただいた内容は、内容を確認のうえ担当(谷口)より折り返しご連絡いたします。回答までに数日いただく場合がございますので、あらかじめご了承ください。</p>
+
+          <div class="contact-info-item">
+            <div class="strength-icon">@</div>
+            <span><strong>メールアドレス</strong>m-taniguchi@mt-consult.info</span>
+          </div>
+          <div class="contact-info-item">
+            <div class="strength-icon">経</div>
+            <span><strong>屋号</strong>谷口経営コンサルティング</span>
+          </div>
+          <div class="contact-info-item">
+            <div class="strength-icon">診</div>
+            <span><strong>担当</strong>谷口 睦(中小企業診断士)</span>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <!--
+            Formspree設定手順:
+            1. https://formspree.io/ で無料アカウントを作成
+            2. 新しいフォームを作成し、発行された送信先URL
+               (例: https://formspree.io/f/xxxxxxxx) を確認
+            3. 下記 action="https://formspree.io/f/YOUR_FORM_ID" の
+               YOUR_FORM_ID の部分を、発行されたIDに書き換える
+          -->
+          <form action="https://formspree.io/f/xkjwjaoz" method="POST">
+            <div class="form-group">
+              <label for="name">お名前<span class="required">必須</span></label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">メールアドレス<span class="required">必須</span></label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">お問い合わせ内容<span class="required">必須</span></label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">送信する</button>
+            <p class="form-status"></p>
+            <p class="form-note">送信いただいた情報は、お問い合わせへの対応以外の目的では使用いたしません。</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="谷口経営コンサルティング">
+        <p>中小企業診断士 谷口睦による経営支援事務所。中小企業・創業支援、ノーコード開発、AIエージェント活用支援を行っています。</p>
+      </div>
+      <div class="footer-nav">
+        <div>
+          <h4>MENU</h4>
+          <ul>
+            <li><a href="index.html">トップ</a></li>
+            <li><a href="profile.html">プロフィール・サービス</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>CONTACT</h4>
+          <ul>
+            <li><a href="mailto:m-taniguchi@mt-consult.info">m-taniguchi@mt-consult.info</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 谷口経営コンサルティング
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
