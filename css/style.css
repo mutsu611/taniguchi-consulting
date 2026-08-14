@@ -618,6 +618,64 @@ section {
   font-size: 0.94rem;
 }
 
+/* ===== 事例ページ ===== */
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.case-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.case-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.case-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--navy);
+  background: var(--gray-100);
+  border-radius: 999px;
+  padding: 3px 12px;
+  margin-bottom: 12px;
+}
+
+.case-card h3 {
+  font-size: 1.1rem;
+  color: var(--navy-dark);
+  margin-bottom: 18px;
+}
+
+.case-facts {
+  font-size: 0.9rem;
+  color: var(--gray-700);
+  border-top: 1px solid var(--gray-200);
+  padding-top: 16px;
+}
+
+.case-facts dt {
+  font-weight: 700;
+  color: var(--accent);
+  margin-top: 14px;
+}
+
+.case-facts dt:first-child {
+  margin-top: 0;
+}
+
+.case-facts dd {
+  margin-top: 4px;
+}
+
 /* ===== お問い合わせページ ===== */
 .contact-layout {
   display: grid;
@@ -738,6 +796,10 @@ section {
 @media (max-width: 900px) {
   .strength-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .case-grid {
+    grid-template-columns: 1fr;
   }
 
   .profile-block {
